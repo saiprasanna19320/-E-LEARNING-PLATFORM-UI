@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+/* Hero Section */
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.progress-container label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.progress {
+  height: 25px;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  animation: fillBar 2s ease-out;
+}
+
+@keyframes fillBar {
+  0% {
+    width: 0%;
+  }
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player {
+  width: 90%;
+  max-width: 720px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.video-player:hover {
+  transform: scale(1.02);
+}
+
+/* Gallery */
+.image-gallery {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  padding: 50px 0;
+  animation: fadeIn 1s ease-in;
+}
+
+.gallery-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+  background-color: #212529;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ========================= */
+/* 💬 Contact Page Styles    */
+/* ========================= */
+
+.contact-section {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  animation: fadeIn 1s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-section .form-control {
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  box-shadow: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact-section .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.contact-section button {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.contact-info {
+  background-color: #f1f3f5;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+  color: #495057;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #007bff;
+}
